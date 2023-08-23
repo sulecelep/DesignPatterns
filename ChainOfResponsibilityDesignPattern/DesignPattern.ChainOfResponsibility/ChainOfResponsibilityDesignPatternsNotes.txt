@@ -1,0 +1,21 @@
+
+Chain Of Responsibility 
+
+DAL'da Context ve Entity oluşturduk.
+Models'de ViewModel oluşturduk.
+ChainOfResponsibility klasöründe zincir class'lar oluşturduk.
+Bu zincir class'ların abstract olması önemli. Sürekli override ederek kullancaz. Protected sadece miras alınan sınıfın görebilmesi içn
+
+Veznedar-Şube Müdür Yardımcısı-Şube Müdürü-Bölge Müdürü
+Approver: onaylayıcı
+Treasurer: Veznedar
+ManagerAsistant: Şube Müdür Yardımcısı
+Manager: Şube Müdürü
+AreaDirector: Bölge Direktörü
+
+Özet: İşlemler Silsilesi varsa ve Dökümantasyonu yapılacaksa zincirleme olarak işlem kaydediliyor.
+
+Debug Edildiğinde Sırasıyla;
+1-Bütün sınıflardan nesne oluşturdu 
+2-Bütün sonraki onaylayıcılar atandı.
+3-Biz ProcessRequest'e CustomerProcessViewModel'den model nesnesine inputlarla değer atayıp gönderdiğimiz için çekmek istediğimiz miktarla beraber zincir treasurer'dan başlandı en alt zincir olduğu için(treasurer.ProcessRequest(model); ), tabii bütün classlar Employee'den miras aldıkları için oradaki metotlar zincirin devamını sağladı koşul sağlanınca veya en son halka tamamlanınca zincirden çıkıldı. 
