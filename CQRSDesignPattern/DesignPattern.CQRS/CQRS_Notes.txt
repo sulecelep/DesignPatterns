@@ -1,0 +1,18 @@
+CQRS - Command Query Responsibility Segregation (Komut Sorgu Sorumluluğu Ayrımı)
+
+Commands: Objenin veya sistemin durumunu değiştirir. Ekle Sil Güncelle (Yazma)
+
+
+Queries: Sadece sonucu geriye döner herhangi bir objenin veya sistemin durumunu değiştirmez. Listeleme Filtreleme (Okuma)
+
+Yani Okuma ve Yazma işlemlerini birbirinden ayırmaya yarıyor.
+--Trendyol sıklıkla kullanıyormuş
+
+Kullanım yerleri:
+--Sıklıkla okuma isteği alıyorsa sayfa yani kullanıcısı fazlaysa.
+
+Klasör Başlıkları:
+Commands --> Insert Update Delete propertylerini tutacak
+Queries --> Where şartı parametrelerini tutacak (Şartları tutuyoruz mesela sadece ID'ye göre getireceksek ID parametresini tutucaz)
+Results --> Listeleme propertylerini tutacak
+Handlers --> CRUD metotları burada yazılacak
