@@ -1,0 +1,44 @@
+Template Method Design Pattern
+
+-Bir tane Abstract sınıf olacak. Diğer sınıflar bu abstract sınıftan türeyecek ve bu sınıftaki metotları override ederek kullanacak.
+
+-Worker Sınıfı Metotları: Bütün çalışanların günlük benzer yaptığı rutinler sadece work()'ler farklı biri yangın söndürür biri odun keser vs. bu metotlar abstract olduğu için override ederek kullanıcaz.
+Worker: (Abstract Class)
+DailyRutine()
+getUp()
+eatBreakfast()
+goToWork()
+work()
+returnToHome()
+relax()
+sleep()
+
+FireFighter:    Lumberjack:   Postman:   Manager:
+work()          work()        work()     work() + relax()
+
+
+
+Netflix Plan Örneği:
+
+NetflixPlans: (Abstract Class)
+public void CreatePlan()
+{
+    PlanType(string.Empty);
+    CountPerson(0);
+    Price(0);
+    Resolution(string.Empty);
+    Content(string.Empty);
+}
+public abstract string PlanType(string planType);
+public abstract int CountPerson(int countPerson);
+public abstract string Resolution(string resolution);
+public abstract string Content(int content);
+public abstract double Price(double price);
+
+BasicPlan:NetflixPlans        
+
+StandartPlan:NetflixPlans       
+
+PremiumPlan:NetflixPlans
+
+
