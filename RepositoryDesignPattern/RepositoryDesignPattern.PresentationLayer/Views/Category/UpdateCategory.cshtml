@@ -1,0 +1,21 @@
+﻿@model RepositoryDesignPattern.EntityLayer.Concrete.Category
+
+@{
+    Layout = null;
+}
+
+<link href="~/lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+<div class="container">
+    <br />
+    <form method="post">
+        @Html.HiddenFor(x=>x.CategoryID)
+        <label>Kategori Adı</label>
+        <input type="text" class="form-control" asp-for="CategoryName" />
+        <br />
+
+
+        <button type="submit" class="btn btn-success">Güncelle</button>
+    </form>
+</div>
+

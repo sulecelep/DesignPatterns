@@ -1,0 +1,39 @@
+﻿@model RegisterViewModel
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Observer Design Pattern</title>
+    <link href="~/lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="container">
+        <br />
+        <form method="post">
+            <br />
+            <label>Adınız</label>
+            <input type="text" asp-for="Name" class="form-control" />
+            <br />
+            <label>Soyadınız</label>
+            <input type="text" asp-for="Surname" class="form-control" />
+            <br />
+            <label>Mail Adresiniz</label>
+            <input type="text" asp-for="Email" class="form-control" />
+            <br />
+            <label>Kullanıcı Adınız</label>
+            <input type="text" asp-for="Username" class="form-control" />
+            <br />
+            <label>Şifreniz</label>
+            <input type="password" asp-for="Password" class="form-control" />
+            <br />
+            <button class="btn btn-primary" type="submit">Kayıt Ol</button>
+            <br />
+        </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,35 @@
+﻿@model CustomerViewModel
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Unit Of Work Design Pattern</title>
+    <link href="~/lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+</head>
+<body>
+    <div class="container">
+        <br />
+        <form method="post">
+            <br />
+            <label>Gönderici ID</label>
+            <input type="text" asp-for="SenderID" class="form-control" />
+            <br />
+            <label>Alıcı ID</label>
+            <input type="text" asp-for="ReceiverID" class="form-control" />
+            <br />
+            <label>Miktar</label>
+            <input type="text" asp-for="Amount" class="form-control" />
+            <br />
+           
+            <button class="btn btn-primary" type="submit">Gönder</button>
+            <br />
+        </form>
+    </div>
+</body>
+</html>

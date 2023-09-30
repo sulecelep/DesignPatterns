@@ -1,0 +1,2 @@
+Unit Of Work Design Pattern
+Veritabanına kayıt ederken kayıt sürecini manipüle edebilmemizi sağlıyor. 

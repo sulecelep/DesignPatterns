@@ -1,0 +1,31 @@
+Observer Design Pattern 
+
+Sorun: Aradığımız ürünün olmayışı
+Çözüm: Ürünün mağazaya gelişi
+Adım 1= Her gün git ürün geldi mi sor
+Adım 2= Email adresi bırak
+Adım 3= Yeni ürün gelince mail atılacak
+
+Çözüm 1 = Mağaza yeni gelen tüm ürünleri mail olarak herkese atıyor
+Sorun = İstenmeyen mailler birikiyor
+
+Mail Kutusu
+-Her gün bize 10 yeni ürün geliyor
+-Her gün bültene abone olan kulanıcılara 10 yeni mail atılsın.
+
+-6. günün sonunda istediğiniz ürünün maili geliyor. 50 tane istenmeyen mail var mail kutunuzda.
+
+
+Gerçek Dünya Örneği
+Gazete/Dergi aboneliğini iptal etme örneği anlatıldı.
+
+
+Create User Kullanıcı oluştuğunda olay tetiklenecek gelişecek.
+Welcome message
+Dergi Listesi
+İndirim Kodu
+Abone olunacak dergiler seçilsin
+Abone olunan dergiye ait bilgiler iletilecek.
+
+
+
